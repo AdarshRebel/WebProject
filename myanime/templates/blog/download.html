@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Watch</title>
+    {%load static%}
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+    <!-- font awesome cdn link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <!-- custom css file link -->
+    <link rel="stylesheet" href="{% static 'css/style.css'%}">
+
+</head>
+
+<body>
+
+
+
+
+    <!-- header section start -->
+    <header>
+        <a href="#" class="logo"><i class="fas fa-infinity"></i>AnimeTV</a>
+        <nav class="navbar">
+            <a class="active" href="{% url 'home' %}">home</a>
+            <a href="#anime">anime</a>
+            <a href="#action">action</a>
+            <a href="#child">child</a>
+            <a href="#family">family</a>
+        </nav>
+        <div class="icons">
+            <i class="fas fa-bars" id="menu-bars"></i>
+            <input type="text" placeholder="Search..">
+            <i class="fas fa-search" id="search-icon"></i>
+            <a href="{% url 'new' %}" class="fas fa-heart"></a>
+        </div>
+        <a href="{% url 'logout' %}"class="btn btn-primary">Logout</a>
+    </header>
+
+    <!-- video -->
+
+    <div class="video-container container">
+        <video controls muted autoplay>
+            <source src="{% static 'video/kengenAsura.mp4'%}">
+
+        </video>
+    </div>
+
+    <div class="about container">
+        <h2>ABOUT KENGAN ASHURA</h2>
+        <p>Ohma Tokita enters a hidden world where corporate disputes are settled in brutal gladiator bouts. Forget the
+            money, he just wants to fight -- and win.
+            Action-packed adventures, offbeat comedies, inspirational stories -- these anime movies and TV shows have a
+            style and spirit unlike anything else.
+        </p>
+    </div>
+
+    <!-- screenshots -->
+
+    <div class="screenshots container">
+        <h2>Episodes</h2>
+        <div class="screenshots-content">
+            <iframe width="560" height="315"
+                src="https://drive.google.com/file/d/1SpHi2m6vlpn2bLNctd6gOy8XgULu3qYx/preview"
+                allowfullscreen></iframe>
+        </div>
+        
+    </div>
+
+   <!-- copyright -->
+   <div class="copyright container">
+    <a href="https://www.facebook.com/adarshrebel11/" class="logo"><i class="fa fa-heart"></i>FACEBOOK</a>
+    <a href="https://www.facebook.com/adarshrebel11/" class="logo"><i class="fa fa-search"></i>GMAIL</a>
+    <a href="https://www.facebook.com/adarshrebel11/" class="logo"><i class="fa fa-infinity"></i>INSTAGRAM</a>
+    <a href="https://www.facebook.com/adarshrebel11/" class="logo"><i class="fa fa-linkedin-in"></i>TWITTER</a>
+</div>
+</body>
+
+
+</html>

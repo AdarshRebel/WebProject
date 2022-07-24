@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'myanime.apps.MyanimeConfig',
+    'user.apps.UserConfig',
 
 ]
 
@@ -128,3 +129,5 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'static'),
 ]
+MEDIA_URL = '/img/'
+MEDIA_ROOT= os.path.join(BASE_DIR, 'static/img')
